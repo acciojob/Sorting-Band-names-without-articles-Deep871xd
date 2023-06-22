@@ -1,5 +1,5 @@
 //your code here
-let touristSpots = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
+// let touristSpots = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
 // touristSpots.sort((a, b) => {
 //     const articles = /^(The|A|An)\s+/i; 
 
@@ -22,6 +22,8 @@ let touristSpots = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
 //   ulElement.appendChild(liElement);
 // });
 
+let touristSpots = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
+
 function removeLeadingArticles(str) {
   const articles = ['The', 'A', 'An'];
   const words = str.split(' ');
@@ -32,7 +34,7 @@ function removeLeadingArticles(str) {
 }
 
 // Sort the tourist spots without leading articles
-touristSpots.sort((a, b) => {
+touristSpots = touristSpots.sort((a, b) => {
   const spotA = removeLeadingArticles(a);
   const spotB = removeLeadingArticles(b);
   return spotA.localeCompare(spotB);
