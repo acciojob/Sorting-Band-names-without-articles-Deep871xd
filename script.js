@@ -1,4 +1,4 @@
-your code here
+// your code here
 let touristSpots = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
 touristSpots.sort((a, b) => {
     const articles = /^(The|A|An)\s+/i; 
